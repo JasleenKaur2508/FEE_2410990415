@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guide Styles - Emojis and ASCII Table</title>
+</head>
+<body>
+    <h2>1. Emojis in HTML</h2>
+    <div>
+        <b>Direct Emoji Example:</b>
+        <span class="emoji">😀 😃 😄 😁 😆 😅 😊 ☺️</span>
+        <br><br>
+        <b>Another Emoji:</b> <span class="emoji">❤️</span>
+        <br><br>
+        <b>Using Unicode Entity:</b>
+        <code>&amp;#128512;</code> → <span class="emoji">&#128512;</span>
+        <br><br>
+        We <span class="emoji">❤️</span> HTML <span class="emoji">😊</span> &amp; CSS!
+    </div>
+
+    <h2>2. ASCII Values Table</h2>
+    <table border="1px solid black" style="width: 50%; text-align: center;">
+        <tr>
+            <th>Character</th>
+            <th>ASCII Value</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>65</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>97</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>48</td>
+        </tr>
+        <tr>
+            <td>@</td>
+            <td>64</td>
+        </tr>
+        <tr>
+            <td>Space</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>$</td>
+            <td>36</td>
+        </tr>
+    </table>
+
+    <h2>3. URL Encoding</h2>
+     <div class="example">
+            <div class="label"><b>Before Encoding:</b></div>
+            <div class="url">https://www.example.com/search?query=hello world & coffee</div>
+        </div>
+        <br>
+        <div class="example">
+            <div class="label"><b>After Encoding:</b></div>
+            <div class="url">https://www.example.com/search?query=hello%20world%20%26%20coffee</div>
+        </div>
+
+</body>
+</html>
