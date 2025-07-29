@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MULTI-MEDIA</title>
+</head>
+<body>
+
+    <h2>1. Video Tag</h2>
+    <video width="320" height="240" controls poster="photo.png">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>2. Audio Control</h2>
+    <audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+
+    <h2>Embed and Object tag</h2>
+    <embed src="sample.pdf" type="application/pdf">
+    <br>
+    <object data="sample2.pdf" type="application/pdf"></object>
+    Pdf cannot be downloaded. <a href="sample.pdf" target="_blank">Download pdf</a>
+    </object>
+
+    <h2>iframe</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789012!2d-122.419415684681!3d37.774929279759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c8b8b8b8b%3A0x8b8b8b8b8b8b8b8b!2sSan%20Francisco%2C%20CA%2094105%2C%20USA!5e0!3m2!1sen!2sin!4v1616161616161" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <h2>Video with Captions</h2>
+    <video width="320" height="240" controls poster="photo.png">
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English" default>
+    </video>
+
+
+
+</body>
+</html>
