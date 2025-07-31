@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fefae0;
+  color: #333;
+}
+
+header {
+  background: #d4a373;
+  color: white;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #333;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  padding: 2em;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.intro img {
+  max-width: 300px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.table-section {
+  padding: 2em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 1em;
+  text-align: center;
+}
+
+.quote {
+  background: #faedcd;
+  padding: 2em;
+  font-style: italic;
+  text-align: center;
+}
+
+.media {
+  padding: 2em;
+  text-align: center;
+}
+
+.media video,
+.media audio {
+  width: 100%;
+  max-width: 500px;
+  margin: 1em auto;
+}
+
+.form {
+  background: #ccd5ae;
+  padding: 2em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+form input,
+form select {
+  padding: 0.5em;
+  margin: 0.5em 0;
+  width: 100%;
+}
+
+form label {
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+form button {
+  background: #d4a373;
+  color: white;
+  padding: 0.7em 1.5em;
+  border: none;
+  cursor: pointer;
+  margin-top: 1em;
+  align-self: flex-start;
+}
+
+form button:hover {
+  background: #bc8a5f;
+}
+
+footer {
+  background: #d4a373;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 1em;
+  }
+
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro img {
+    max-width: 100%;
+  }
+
+  form {
+    padding: 0 1em;
+  }
+}
+

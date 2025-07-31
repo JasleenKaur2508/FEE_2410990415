@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MY TRAVEL BLOG</title>
+  <link rel="icon" type="image/png" href="travelfavicon.png" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>SERENE JOURNEYS</h1>
+    <nav>
+      <a href="#intro">Intro</a>
+      <a href="#destinations">Top Picks</a>
+      <a href="#quote">Inspo</a>
+      <a href="#video">Video</a>
+      <a href="#form">Join Us</a>
+    </nav>
+  </header>
+
+  <section id="intro" class="intro">
+    <img src="images1.jpeg" alt="Travel Image">
+    <p>Hey there, fellow wanderer! Welcome to my little corner of the internet where I share stories from the road, travel tips, hidden gems, and everything in between. 
+       Whether you're a seasoned explorer or someone planning your first trip, I hope this blog inspires you to pack your bags and chase your next adventure. 
+       Let’s explore the world, one story at a time.</p>
+  </section>
+
+  <section id="destinations" class="table-section">
+    <h2>Top 3 Destinations</h2>
+    <table>
+      <tr>
+        <th>Country</th><th>Best Time</th><th>Language</th>
+      </tr>
+      <tr><td>Japan</td><td>Spring</td><td>Japanese</td></tr>
+      <tr><td>Italy</td><td>Autumn</td><td>Italian</td></tr>
+      <tr><td>Peru</td><td>Winter</td><td>Spanish</td></tr>
+    </table>
+  </section>
+
+  <section id="quote" class="quote">
+    <blockquote>
+      “Traveling—it leaves you speechless, then turns you into a storyteller.”<br>– Ibn Battuta
+    </blockquote>
+  </section>
+
+  <section id="video" class="media">
+    <h2>Trip Highlights</h2>
+    <video src="travelvideo.mp4" controls></video>
+    <audio controls>
+      <source src="travelaudio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <section id="form" class="form">
+    <h2>Join Our Travel Tribe</h2>
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <label for="dest">Destination:</label>
+      <select id="dest" required>
+        <option>Japan</option>
+        <option>Italy</option>
+        <option>Peru</option>
+      </select>
+
+      <label>Traveler Type:</label>
+      <input type="radio" name="type" value="Solo" id="solo" required><label for="solo">Solo</label>
+      <input type="radio" name="type" value="Group" id="group"><label for="group">Group</label>
+
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" placeholder="you@example.com" required>
+
+      <button type="submit">Join</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Serene Journeys. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
