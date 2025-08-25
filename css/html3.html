@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Properties Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+
+    h2 {
+      background: #2e86de;
+      color: white;
+      padding: 10px;
+      margin-top: 40px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+      padding: 15px;
+      background: white;
+      border: 1px solid #ccc;
+    }
+
+    .flex-container {
+      display: flex;
+      background-color: #e0e0e0;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    .item {
+      background-color: #2ecc71;
+      color: white;
+      padding: 20px;
+      margin: 5px;
+      text-align: center;
+      flex: 1;
+    }
+
+    .row { flex-direction: row; }
+    .column { flex-direction: column; }
+    .wrap { flex-wrap: wrap; }
+    .nowrap { flex-wrap: nowrap; }
+
+    .justify-start    { justify-content: flex-start; }
+    .justify-center   { justify-content: center; }
+    .justify-end      { justify-content: flex-end; }
+    .justify-between  { justify-content: space-between; }
+    .justify-around   { justify-content: space-around; }
+
+    .align-start   { align-items: flex-start; height: 150px; }
+    .align-center  { align-items: center; height: 150px; }
+    .align-end     { align-items: flex-end; height: 150px; }
+
+
+    .align-self-example {
+      display: flex;
+      align-items: flex-start;
+      height: 150px;
+      background: #f8c291;
+    }
+    .align-self-example .item:nth-child(2) {
+      align-self: center;
+      background: #e67e22;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Flexbox Properties Demo</h1>
+
+  <!-- Display: flex -->
+  <div class="section">
+    <h2>1. display: flex</h2>
+    <div class="flex-container">
+      <div class="item">Box 1</div>
+      <div class="item">Box 2</div>
+      <div class="item">Box 3</div>
+    </div>
+  </div>
+
+  <!-- flex-direction -->
+  <div class="section">
+    <h2>2. flex-direction: row / column</h2>
+    <div class="flex-container row">
+      <div class="item">Row 1</div>
+      <div class="item">Row 2</div>
+      <div class="item">Row 3</div>
+    </div>
+    <div class="flex-container column" style="margin-top: 15px;">
+      <div class="item">Column A</div>
+      <div class="item">Column B</div>
+      <div class="item">Column C</div>
+    </div>
+  </div>
+
+  <!-- justify-content -->
+  <div class="section">
+    <h2>3. justify-content</h2>
+    <div class="flex-container justify-start">
+      <div class="item">Start</div>
+      <div class="item">Start</div>
+    </div>
+    <div class="flex-container justify-center">
+      <div class="item">Center</div>
+      <div class="item">Center</div>
+    </div>
+    <div class="flex-container justify-end">
+      <div class="item">End</div>
+      <div class="item">End</div>
+    </div>
+    <div class="flex-container justify-between">
+      <div class="item">Between</div>
+      <div class="item">Between</div>
+    </div>
+    <div class="flex-container justify-around">
+      <div class="item">Around</div>
+      <div class="item">Around</div>
+    </div>
+  </div>
+
+  <!-- align-items -->
+  <div class="section">
+    <h2>4. align-items</h2>
+    <div class="flex-container align-start">
+      <div class="item">Top</div>
+      <div class="item">Top</div>
+    </div>
+    <div class="flex-container align-center">
+      <div class="item">Middle</div>
+      <div class="item">Middle</div>
+    </div>
+    <div class="flex-container align-end">
+      <div class="item">Bottom</div>
+      <div class="item">Bottom</div>
+    </div>
+  </div>
+
+  <!-- flex-wrap -->
+  <div class="section">
+    <h2>5. flex-wrap</h2>
+    <div class="flex-container wrap">
+      <div class="item" style="width: 200px;">Wrap 1</div>
+      <div class="item" style="width: 200px;">Wrap 2</div>
+      <div class="item" style="width: 200px;">Wrap 3</div>
+      <div class="item" style="width: 200px;">Wrap 4</div>
+    </div>
+  </div>
+
+  <!-- align-self -->
+  <div class="section">
+    <h2>6. align-self</h2>
+    <div class="align-self-example">
+      <div class="item">Top</div>
+      <div class="item">Center (self)</div>
+      <div class="item">Top</div>
+    </div>
+  </div>
+
+
+</body>
+</html>
